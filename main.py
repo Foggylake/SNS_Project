@@ -94,7 +94,7 @@ print('10 Days Prediction Accuracy')
 acc = np.ones(10).reshape(-1, 1)-abs(y_test_origin[:10]-y_test_pred_origin[:10])/y_test_origin[:10]
 print(acc)
 
-# Plot the Original anf predicted data together
+# Plot the Original and predicted data together
 plt.figure(figsize=(10, 6))
 plt.plot(y_test_origin, label='True')
 plt.plot(y_test_pred_origin, label='LSTM')
